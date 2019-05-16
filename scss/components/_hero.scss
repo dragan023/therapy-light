@@ -7,7 +7,7 @@
 
     @include for-phone-and-tablet() {
         background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .1) ), url(/dist/img/hero-image.png);
-        color: #fff;
+        color: $white;
     }
 }
 
@@ -32,6 +32,7 @@
     }
 }
 
-.cl-c-button-blue {
+.cl-c-hero__button {
     @include button-blue();
+    margin-bottom: 3em;
 }

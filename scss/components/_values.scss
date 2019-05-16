@@ -1,0 +1,44 @@
+.cl-l-values {
+    text-align: center;
+
+    @include for-phone-only() {
+        padding: 2em;
+    }
+
+    @include for-phone-and-tablet() {
+        padding: 2em 4em;
+    }
+
+    @include for-tablet-landscape-up () {
+        padding: 2em;
+    }
+}
+
+.cl-c-values_subtitle {
+    margin-bottom: 1em;
+    display: block;
+}
+
+.cl-l-values__text-wrapper {
+    display: grid;
+
+    @include for-phone-only() {
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+
+    @include for-tablet-portrait-up() {
+        grid-gap: 4em;
+    }
+
+    @include for-tablet-landscape-up () {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+    }
+}
+
+.cl-c-values__text-box {
+    background: $gray-light;
+    padding: 1em;
+    border-radius: 17px;  
+}
