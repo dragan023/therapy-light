@@ -23,12 +23,11 @@
 
 // TESTIMONIALS
 .cl-l-testimonials {
-    // background: $blue-sky;
+    background: $blue-sky;
 }
 
 .cl-l-testimonials__wrapper {
     display: flex;
-    border-bottom: 1px solid #C5D5DE;
 
     @include for-phone-only() {
         flex-direction: column;
@@ -41,6 +40,35 @@
     }
 }
 
+.cl-c-testimonials__slider {
+    text-align: center;
+    
+    @include for-phone-and-tablet() {
+        padding: 2em;
+    }
+
+    @include for-tablet-landscape-up() {
+        padding: 2em 8em;
+    }
+}
+
+.cl-c-testimonials__slider-paragraph {
+    font-size: 1.3em;
+}
+
+.cl-c-testimonials__slider-link {
+    display: block;
+    margin: 1em 0;
+    color: $blue-light;
+    cursor: pointer;
+}
+
+.cl-l-testimonials__slider-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cl-c-testimonials__title {
     text-align: center;
 }
@@ -48,4 +76,62 @@
 .cl-c-testimonials__subtitle {
     text-align: center;
     display: block;
+}
+
+// SLIDER
+.cl-c-slider-button__dot {
+    width: 10px;
+    height: 10px;
+    fill: $gray-medium;
+    cursor: pointer;
+}
+
+.cl-c-slider-button__dot-1 {
+    fill: $black;
+    margin: 0 .7em;
+}
+
+.cl-c-slider-button__dot-3 {
+    margin: 0 .7em;
+}
+
+.cl-c-slider-button-arrow__box {
+    background: $white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 25px 34px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: ease-in-out 200ms;
+
+    &:hover {
+        background: $blue-light;
+        
+        & > svg {
+            fill: $white;
+        }
+    }
+}
+
+.cl-c-slider-button__arrow-left {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    fill: $blue-light;
+}
+
+.cl-c-slider-button__arrow-right {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    fill: $blue-light;
 }
