@@ -17,6 +17,29 @@ a {
 ul {
   list-style: none; }
 
+.cl-c-card-wrapper {
+  box-shadow: 0px 25px 34px rgba(0, 0, 0, 0.1); }
+  @media (max-width: 599px) {
+    .cl-c-card-wrapper {
+      margin: 2em 0; } }
+  @media (min-width: 600px) {
+    .cl-c-card-wrapper {
+      width: 30%; } }
+
+.cl-l-card__text-box {
+  padding: 1em; }
+
+.cl-c-card__img {
+  width: 100%;
+  height: auto; }
+
+.cl-c-card__link {
+  display: block;
+  text-align: right;
+  color: #00B3EF;
+  text-transform: uppercase;
+  cursor: pointer; }
+
 .cl-l-hero {
   background-image: url(/dist/img/hero-image.png);
   background-size: cover;
@@ -217,6 +240,115 @@ ul {
   background: #F9F9F9;
   padding: 1em;
   border-radius: 17px; }
+
+.cl-l-science__wrapper {
+  display: flex; }
+  @media (max-width: 599px) {
+    .cl-l-science__wrapper {
+      flex-direction: column;
+      padding: 2em; } }
+  @media (min-width: 600px) {
+    .cl-l-science__wrapper {
+      padding: 2em 6em;
+      justify-content: space-between; } }
+
+.cl-c-science__title {
+  text-align: center; }
+
+.cl-c-science__subtitle {
+  text-align: center;
+  display: block; }
+
+.cl-l-testimonials {
+  background: #F5FDFF; }
+
+.cl-l-testimonials__wrapper {
+  display: flex; }
+  @media (max-width: 599px) {
+    .cl-l-testimonials__wrapper {
+      flex-direction: column;
+      padding: 2em; } }
+  @media (min-width: 600px) {
+    .cl-l-testimonials__wrapper {
+      padding: 2em 6em;
+      justify-content: space-between; } }
+
+.cl-c-testimonials__slider {
+  text-align: center; }
+  @media (max-width: 900px) {
+    .cl-c-testimonials__slider {
+      padding: 2em; } }
+  @media (min-width: 900px) {
+    .cl-c-testimonials__slider {
+      padding: 2em 8em; } }
+
+.cl-c-testimonials__slider-paragraph {
+  font-size: 1.3em; }
+
+.cl-c-testimonials__slider-link {
+  display: block;
+  margin: 1em 0;
+  color: #00B3EF;
+  cursor: pointer; }
+
+.cl-l-testimonials__slider-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.cl-c-testimonials__title {
+  text-align: center; }
+
+.cl-c-testimonials__subtitle {
+  text-align: center;
+  display: block; }
+
+.cl-c-slider-button__dot {
+  width: 10px;
+  height: 10px;
+  fill: #bababa;
+  cursor: pointer; }
+
+.cl-c-slider-button__dot-1 {
+  fill: #000000;
+  margin: 0 .7em; }
+
+.cl-c-slider-button__dot-3 {
+  margin: 0 .7em; }
+
+.cl-c-slider-button-arrow__box {
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0px 25px 34px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: ease-in-out 200ms; }
+  .cl-c-slider-button-arrow__box:hover {
+    background: #00B3EF; }
+    .cl-c-slider-button-arrow__box:hover > svg {
+      fill: #fff; }
+
+.cl-c-slider-button__arrow-left {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  fill: #00B3EF; }
+
+.cl-c-slider-button__arrow-right {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  fill: #00B3EF; }
 
 .cl-l-approach {
   text-align: center;

@@ -1,0 +1,28 @@
+.cl-c-card-wrapper {
+    box-shadow: 0px 25px 34px rgba(0, 0, 0, 0.1);
+
+    @include for-phone-only() {
+        margin: 2em 0;
+    }
+
+    @include for-tablet-portrait-up() {
+        width: 30%;
+    }
+}
+
+.cl-l-card__text-box {
+    padding: 1em;
+}
+
+.cl-c-card__img {
+    width: 100%;
+    height: auto;
+}
+
+.cl-c-card__link {
+    display: block;
+    text-align: right;
+    color: $blue-light;
+    text-transform: uppercase;
+    cursor: pointer;
+}
