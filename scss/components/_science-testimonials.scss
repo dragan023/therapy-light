@@ -1,0 +1,51 @@
+.cl-l-science__wrapper {
+    display: flex;
+
+    @include for-phone-only() {
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    @include for-tablet-portrait-up() {
+        padding: 2em 6em;
+        justify-content: space-between;
+    }
+}
+
+.cl-c-science__title {
+    text-align: center;
+}
+
+.cl-c-science__subtitle {
+    text-align: center;
+    display: block;
+}
+
+// TESTIMONIALS
+.cl-l-testimonials {
+    // background: $blue-sky;
+}
+
+.cl-l-testimonials__wrapper {
+    display: flex;
+    border-bottom: 1px solid #C5D5DE;
+
+    @include for-phone-only() {
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    @include for-tablet-portrait-up() {
+        padding: 2em 6em;
+        justify-content: space-between;
+    }
+}
+
+.cl-c-testimonials__title {
+    text-align: center;
+}
+
+.cl-c-testimonials__subtitle {
+    text-align: center;
+    display: block;
+}
